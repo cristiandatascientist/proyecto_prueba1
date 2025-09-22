@@ -1,5 +1,7 @@
+INICIAR GITHUB POR PROYECTO:
+    vsc terminal powershell:  
+        git init
 AÑADIR NUEVO ARCHIVO A GITHUB:
-    vsc terminal: 
         git add "nombre.ext"
         git commit -m "Añadido nuevo archivo" (crea un punto de control en repositorio local)
         git push
