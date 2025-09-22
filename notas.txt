@@ -5,4 +5,6 @@ AÑADIR NUEVO ARCHIVO A GITHUB:
         git add "nombre.ext"
         git commit -m "Añadido nuevo archivo" (crea un punto de control en repositorio local)
         git push
-                 
+BRANCH's:
+        git checkout -b "nombre_branch ej: var1_ml_model" (generar el branch local)
+        git push --set-upstream origin var1_ml_model (asociar el branch local al remoto en git)
