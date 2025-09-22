@@ -1,10 +1,24 @@
-INICIAR GITHUB POR PROYECTO:
-    vsc terminal powershell:  
-        git init
-AÑADIR NUEVO ARCHIVO A GITHUB:
-        git add "nombre.ext"
-        git commit -m "Añadido nuevo archivo" (crea un punto de control en repositorio local)
-        git push
-BRANCH's:
-        git checkout -b "nombre_branch ej: var1_ml_model" (generar el branch local)
-        git push --set-upstream origin var1_ml_model (asociar el branch local al remoto en git)
+CREAR NUEVO PROYECTO EN GITHUB
+        Crear nueva carpeta local de proyecto
+        Open folder on VSCode
+        En terminal Comand Prompt
+                git init
+        Añadir archivos de proyecto
+                git add . (todos los archivos) o git add "nombre.ext" (archivo especifico)
+                git commit -m  "Archivos iniciales"
+        Crear repositorio en Github: New Repository → Nombre del proyecto → Copiar URL SSH.
+        Conectar repo local con GitHub y subir
+                git remote add origin <URL-del-repositorio-SSH>
+                git branch -M main
+                git push -u origin main
+        Crear branch (local) para experimentos
+                git checkout -b experimento_ejemplo
+        Modificar notebook
+                git add ml_model.ipynb
+                git commit -m "Primera variación"
+                git push --set-upstream origin experimento_ejemplo (asociar el branch local al remoto en git)
+        Pull Request y Merge:
+                GitHub → Compare & Pull Request → revisar cambios → Merge → branch limpio
+        Futuras variaciones:
+                git commit -m
+                git push
