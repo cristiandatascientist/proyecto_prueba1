@@ -1,8 +1,14 @@
-CREAR NUEVO PROYECTO EN GITHUB
+CREAR NUEVO PROYECTO EN GITHUB:
         Crear nueva carpeta local de proyecto
         Open folder on VSCode
-        En terminal Comand Prompt
-                git init
+        Iniciar Git
+                git init (en terminal Comand Prompt)
+        Configurar entorno virtual:
+                python -m venv venv
+                #Activar
+                venv\Scripts\activate.bat
+                #Instalar librerías
+                pip install ...
         Añadir archivos de proyecto
                 git add . (todos los archivos) o git add "nombre.ext" (archivo especifico)
                 git commit -m  "Archivos iniciales"
@@ -22,3 +28,7 @@ CREAR NUEVO PROYECTO EN GITHUB
         Futuras variaciones:
                 git commit -m
                 git push
+FUTURAS SESIONES:
+        Seleccionar carpeta de proyecto (VSC reconoce automaticamente que es un repositorio git)
+        Activar entorno virtual
+                venv\Scripts\activate.bat
